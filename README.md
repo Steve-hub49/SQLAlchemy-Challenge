@@ -33,37 +33,63 @@ Use Pandas to print the summary statistics for the precipitation data.
 
 ## Station Analysis
 Design a query to calculate the total number of stations.
+
 Design a query to find the most active stations.
+
 a. List the stations and observation counts in descending order.
+
 b. Which station has the highest number of observations?
+
 c. Hint: You will need to use a function such as func.min, func.max, func.avg, and func.count in your queries.
+
 Design a query to retrieve the last 12 months of temperature observation data (TOBS).
+
 a. Filter by the station with the highest number of observations.
+
 b. Plot the results as a histogram with bins=12.
 
 ## Step 2 - Climate App
 Now that you have completed your initial analysis, design a Flask API based on the queries that you have just developed.
 Use Flask to create your routes.
+
 Routes
+
 /
+
 a. Home page.
+
 b. List all routes that are available.
+
 /api/v1.0/precipitation
+
 a. Convert the query results to a dictionary using date as the key and prcp as the value.
+
 b. Return the JSON representation of your dictionary.
+
 /api/v1.0/stations
+
   a. Return a JSON list of stations from the dataset.
+  
 /api/v1.0/tobs
+
 a. Query the dates and temperature observations of the most active station for the last year of data.
+
 b. Return a JSON list of temperature observations (TOBS) for the previous year.
+
 /api/v1.0/<start> and /api/v1.0/<start>/<end>
+  
 a. Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
+
 b. When given the start only, calculate TMIN, TAVG, and TMAX for all dates greater than and equal to the start date.
+
 c. When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
 
+
 Hints
-You will need to join the station and measurement tables for some of the queries.
-Use Flask jsonify to convert your API data into a valid JSON response object.
+
+a. You will need to join the station and measurement tables for some of the queries.
+
+b. Use Flask jsonify to convert your API data into a valid JSON response object.
 
 ## Bonus: Other Recommended Analyses
 The following are optional challenge queries. These are highly recommended to attempt, but not required for the homework.
@@ -78,7 +104,9 @@ Use the t-test to determine whether the difference in the means, if any, is stat
 The starter notebook contains a function called calc_temps that will accept a start date and end date in the format %Y-%m-%d. The function will return the minimum, average, and maximum temperatures for that range of dates.
 Use the calc_temps function to calculate the min, avg, and max temperatures for your trip using the matching dates from the previous year (i.e., use "2017-01-01" if your trip start date was "2018-01-01").
 Plot the min, avg, and max temperature from your previous query as a bar chart.
+
 a. Use the average temperature as the bar height.
+
 b. Use the peak-to-peak (TMAX-TMIN) value as the y error bar (YERR).
 
 ## Daily Rainfall Average
