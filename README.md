@@ -1,4 +1,4 @@
-# sqlalchemy-challenge
+# SQLAlchemy-challenge
 
 This is my repository link for HW10 SQLAlchemy Homework - Surfs Up! material. The steps outlined below are in process and will be posted to GitHub.
 
