@@ -1,6 +1,6 @@
-# sqlalchemy-challenge
+# SQLAlchemy-challenge
 
-This is my repository link for HW10 SQLAlchemy Homework - Surfs Up! material. The steps outlined below are in process and will be posted to GitHub.
+This is my repository link for HW10 SQLAlchemy Homework - Surfs Up! material. The steps outlined below are complete and have been posted to GitHub.
 
 Thank you,
 
@@ -85,7 +85,7 @@ b. When given the start only, calculate TMIN, TAVG, and TMAX for all dates great
 c. When given the start and the end date, calculate the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
 
 
-Hints
+## Hints
 
 a. You will need to join the station and measurement tables for some of the queries.
 
@@ -116,3 +116,5 @@ You are provided with a function called daily_normals that will calculate the da
 Create a list of dates for your trip in the format %m-%d. Use the daily_normals function to calculate the normals for each date string and append the results to a list.
 Load the list of daily normals into a Pandas DataFrame and set the index equal to the date.
 Use Pandas to plot an area plot (stacked=False) for the daily normals.
+![daily-normals](Images/daily-normals.png)
+
