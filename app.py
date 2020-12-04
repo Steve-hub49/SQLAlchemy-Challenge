@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 #from datetime import datetime
 import datetime as dt
-from scipy import stats
 from flask import Flask, jsonify
 
 import sqlalchemy
